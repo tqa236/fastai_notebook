@@ -15,5 +15,5 @@ nbdiff nbs/dl1/00_notebook_tutorial.ipynb course-v3/nbs/dl1/00_notebook_tutorial
 
 ```bash
 docker build --tag train .
-docker run -it -p 8888:8888 -v "$PWD":/workspace/fastai --rm train bash
+docker run -it -p 8888:8888 -v "$PWD":/workspace/fastai --rm train
 ```

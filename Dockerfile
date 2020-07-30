@@ -4,11 +4,7 @@ LABEL maintainer="TRINH Quoc Anh <trinhquocanh94@gmail.com>"
 
 COPY ./course-v3/requirements.txt requirements.txt
 
-# RUN pip install --upgrade pip setuptools wheel
-
 RUN conda install -c fastai --file requirements.txt
-# RUN python -m pip install -r requirements.txt
-# RUN conda install -c fastai
 
 WORKDIR /workspace/fastai
 
